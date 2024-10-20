@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <title>Select Filter</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Select a Filter to Apply</h2>
+        <div class="card">
+            <div class="card-body">
+                <form method="post">
+                    {% csrf_token %}
+                    <button type="submit" name="filter" value="gray" class="btn btn-secondary mb-3">Gray Filter</button>
+                    <button type="submit" name="filter" value="sepia" class="btn btn-warning mb-3">Sepia Filter</button>
+                    <button type="submit" name="filter" value="blur" class="btn btn-info mb-3">Blur Filter</button>
+                </form>
+                <hr>
+                <h5>Uploaded Image:</h5>
+                <img src="{{ MEDIA_URL }}{{ image_name }}" alt="Uploaded Image" class="img-fluid mt-2">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
