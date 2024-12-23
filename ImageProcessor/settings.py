@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-knzg-s_9al9^wc@ysao^l_zb@aor1%n@^ks8s$r6^up^e9*a5^"
+SECRET_KEY = ""
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -129,12 +129,12 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
 
-AWS_ACCESS_KEY_ID = 'AKIAZQ3DO552QBU6AAMW'
-AWS_SECRET_ACCESS_KEY = 'mjrTSKzjgiWBu0bOMef6G5/ixxR3+BpSOrcJ7KwO'
-AWS_STORAGE_BUCKET_NAME = 'fuad-image-bucket'
-AWS_S3_REGION_NAME = 'us-east-1'  # e.g., 'us-east-1'
+AWS_ACCESS_KEY_ID = ''
+AWS_SECRET_ACCESS_KEY = ''
+AWS_STORAGE_BUCKET_NAME = ''
+AWS_S3_REGION_NAME = ''  # e.g., 'us-east-1'
 
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+DEFAULT_FILE_STORAGE = ''
 
 
 MEDIA_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/'
