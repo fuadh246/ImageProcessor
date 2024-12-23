@@ -18,7 +18,7 @@
 
 5. **Elastic Load Balancer**: ELB distributes incoming requests across multiple EC2 instances to ensure high availability and balanced traffic
 
-Mermaid diagram:
+Diagram:
 
 ```mermaid
 graph TD;
