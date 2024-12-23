@@ -62,4 +62,3 @@ def select_filter(request, image_name):
 def view_image(request, image_name):
     image_url = f"https://{BUCKET_NAME}.s3.amazonaws.com/processed/{image_name}"
     return render(request, 'view_image.html', {'image_url': image_url})
-

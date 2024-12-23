@@ -1,4 +1,4 @@
-# CIS 4517 - Image Processing Application
+# Image Processing Application
 
 ### Fuad Hassan
 
